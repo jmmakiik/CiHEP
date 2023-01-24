@@ -1,0 +1,62 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+\title{CiHEP Problem 2}
+\author{Jere Mäki-Ikola}
+\date{}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage{listings}
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{feynmf}
+\usepackage{hyperref}
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+\usepackage{float}
+
+\begin{document}
+
+\maketitle
+
+\begin{fmffile}{ep_annihilation}
+\begin{figure}[h]
+\centering
+\parbox{50mm}{
+\begin{fmfchar*}(90,60)
+\fmfleft{i1,i2}
+\fmfright{o1,o2}
+\fmf{fermion,tension=3.5}{i1,v1}
+\fmf{fermion,tension=0.75}{v2,i2}
+\fmf{fermion,tension=1.5}{v1,v2}
+\fmf{photon,tension=1}{v1,o1}
+\fmf{photon,tension=2}{v2,o2}
+\put(-5,-5){\small $e^-$}
+\put(-5,60){\small $e^+$}
+\put(85,-5){$\gamma$}
+\put(85,60){$\gamma$}
+\end{fmfchar*}}
+\parbox{50mm}{
+\begin{fmfchar*}(90,60)
+\fmfleft{i1,i2}
+\fmfright{o1,o2}
+\fmf{fermion,tension=0.75}{i1,v1}
+\fmf{fermion,tension=3.5}{v2,i2}
+\fmf{fermion,tension=1.5}{v1,v2}
+\fmf{photon,tension=1}{v1,o1}
+\fmf{photon,tension=2}{v2,o2}
+\put(-5,-5){\small $e^-$}
+\put(-5,60){\small $e^+$}
+\put(85,-5){$\gamma$}
+\put(85,60){$\gamma$}
+\end{fmfchar*}}
+\caption{Feynman graphs for the lowest order contributions to electron-positron annihilation \cite{alma994981903506253}}
+\end{figure}
+\end{fmffile}
+
+\bibliographystyle{plain}
+\bibliography{bibliography.bib}
+
+\end{document}
