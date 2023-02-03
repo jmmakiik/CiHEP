@@ -3,10 +3,10 @@
 from multiprocessing import Process
 import subprocess
 
-path = "~/CiHEP/Ex2/Prob1"
+path = "~/CiHEP/Ex2/jmmakiik/Prob1" #Path has to be changed depending on where the files are (removing/replacing /CiHEP part for example)
 
 def hello(num):
-    output = open("hello_%s"%num, "w")
+    output = open("hellopy_%s"%num, "w")
     subprocess.run(path + " "+ num, shell=True, stdout=output)
     output.close()
 
