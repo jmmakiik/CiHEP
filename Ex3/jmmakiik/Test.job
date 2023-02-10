@@ -1,0 +1,7 @@
+#!/bin/csh
+
+make
+chmod +x * #This is here because there was a problem with permissions for newly created files (at least for me).
+#echo $LD_LIBRARY_PATH #This is to check that the program and terminal knows the path to library if needed.
+echo
+./Testexe #Running the program
