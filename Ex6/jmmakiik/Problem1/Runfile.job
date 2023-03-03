@@ -1,0 +1,9 @@
+#!/bin/csh
+
+chmod +x *
+make
+source setup.csh
+./writing
+./reading
+
+#Just run this file and it should do everything needed
