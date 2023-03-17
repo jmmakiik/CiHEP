@@ -1,0 +1,6 @@
+#!/bin/csh
+
+ pyroot Plotting1.py
+ pyroot Plotting2.py
+
+#Just run this file and it should do everything needed

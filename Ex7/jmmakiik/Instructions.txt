@@ -1,0 +1,15 @@
+I assumed that the programs themselves aren't needed for uploading. And I also assumed that the
+reader knows how to use the programs. I will only return files that were modified or are completely
+new, and instructions that are needed to get the results wanted.
+
+For the HDECAY first: Copy (and possibly replace) the files (hdecay.in, makefile and Runfile.job)
+in my HDECAY folder to where your HDECAY program itself is. Then just write ./Runfile.job to do
+everything needed. Then copy the br.sm2 file to the "Plots" folder returned here.
+
+For the FeynHiggs: Copy (and possibly replace) the files (demo.cc, Makefile and Runfile.job) in my
+FeynHiggs folder to where your "example" folder of FeynHiggs program is (FeynHiggs-2.18.1/example
+for example). Then running ./Runfile.job in the "example" folder will do everything needed again.
+Now, the program has produced the file "output.txt". Copy this file to the "Plots" folder also.
+
+After running the two programs and copying the needed files to the "Plots" folder, then running 
+the ./Runfile.job produces the wanted plots for the exercises.
