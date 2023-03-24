@@ -1,0 +1,9 @@
+Just move this file (jmmakiik) itself into the pythia file (like the root file where you do the ./configure
+and make). Then by running ./program.job on terminal will run everything needed. 
+
+I'd like to note that I wasn't able to get the PDFs working so the answer to the width for the
+second problem is a lot higher than actually wanted. I have added paths and the readstring for using the pdf if someone else gets it to work but I wasn't able to myself.
+
+Makefile is only used for cleaning the file from produced files.
+
+Problem 3 is in its own file. Just run ./Problem3.sh on terminal and it will do what is wanted.
