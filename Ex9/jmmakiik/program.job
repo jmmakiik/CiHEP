@@ -1,0 +1,12 @@
+#!/bin/csh
+
+source setup.csh
+
+setenv PYTHONPATH $PWD/../lib
+setenv PYTHIA8DATA $PWD/../share/Pythia8/xmldoc
+setenv LD_LIBRARY_PATH ${LD_LIBRARY_PATH}:$PWD/../lib:$PWD/../Pythia8/LHAPDF/lib/
+#setenv LHAPATH $PWD/../share/Pythia8/pdfdata
+#setenv LHAPDF_DATA_PATH $PWD/../share/Pythia8/pdfdata
+
+python3 pT_and_eta.py
+pyroot plots.py

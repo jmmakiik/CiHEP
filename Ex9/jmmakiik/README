@@ -1,0 +1,10 @@
+I have assumed that pythia8309 has been downloaded and configured by the reader (so there is no download in the Makefile).
+
+Just move this file (jmmakiik) itself into the pythia file (as in the path for the program files
+should be path/to/pythia8309/jmmakiik). Then by running ./program.job on terminal will run
+everything needed. The Makefile is just for cleaning the file from outputs (running make clean in
+terminal).
+
+The program will produce a text file and a ROOT file including the results of transverse momentum
+and pseudorapidity. Then the program will produce histograms for these two. Then the program will
+also print the probability for exercise two.
