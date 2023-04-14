@@ -1,0 +1,13 @@
+Just to note, this exercise was difficult in a way to change the absorber from argon to water. I
+used the DetectorModifier.sh to change the absorber variables in the DetectorConstruction.cc file
+in the Geant4 program. My files assume that the user has followed the instructions in the example
+10 for Geant4. Copying the vis.mac and DetectorModifier.sh files to the file where you run the
+./exampleB4a command should do the trick. Uncommenting and commenting as instructed in the vis.mac
+and DetectorModifier.sh files will give you the wanted results when you input make and 
+./exampleB4a.
+
+The outputs of the program I have produced are attached to the solution. The geometry in both
+cases is anternating between absorber plates (lead in default case or water) and detection gaps
+(liquid argon) which are both square/rectangular (default dimensions). The entrance face of the
+calorimeter for the beam is a square (according to one of the README files of the program). In all
+cases, only one particle is being simulated and have 10 GeV energy.
