@@ -1,0 +1,3 @@
+It is assumed that the user has downloaded the CERN root file to this folder by themselves.
+Writing the ./program.job runs all the programs and produces the wanted histograms.
+Makefile is just for cleaning up the folder from outputs.
